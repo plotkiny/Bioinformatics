@@ -31,7 +31,7 @@ class superstring():
 
 
 def main():       
-    file = 'rosalind_lcsm2.txt'
+    file = 'test.txt'
     seq_dict = read_fasta(file)
     array = np.chararray((1,0))
     for k,v in seq_dict.items():
