@@ -9,10 +9,10 @@ file = 'file.txt'
 
 def naive_overlap_map(file):
     
-    global seq_dict; seq_dict = fasta_functions.read_genome(file)  #reading FASTA sequence strings   
-    global seq_dict_reversed; seq_dict_reversed = dict((v,k) for k,v in seq_dict.items())    
+    seq_dict = fasta_functions.read_genome(file)  #reading FASTA sequence strings   
+    seq_dict_reversed = dict((v,k) for k,v in seq_dict.items())    
     
-    global seq_list; seq_list = []    
+    seq_list = []    
     for k,v in seq_dict.items():
         seq_list.append(seq_dict[k])
         
